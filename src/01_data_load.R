@@ -1,5 +1,5 @@
 # 01_data_load.R
-# Load GiBleed OMOP CDM dataset using Eunomia and CDMConnector
+# Load GiBleed OMOP CDM dataset and save connection metadata
 
 library(CDMConnector)
 library(dplyr)
@@ -7,7 +7,6 @@ library(dbplyr)
 library(duckdb)
 
 # Create a local DuckDB database with the GiBleed OMOP CDM dataset
-# First run downloads the data into EUNOMIA_DATA_FOLDER; subsequent runs reuse the local copy
 db_path <- eunomiaDir(
   datasetName = "GiBleed",
   cdmVersion = "5.3",
@@ -16,7 +15,6 @@ db_path <- eunomiaDir(
 
 con <- DBI::dbConnect(duckdb::duckdb(dbdir = db_path))
 
-# Create a cdm object for convenient dplyr-based access
 cdm <- cdmFromCon(
   con = con,
   cdmSchema = "main",
@@ -27,5 +25,12 @@ cdm <- cdmFromCon(
 # Inspect the cdm object (list of OMOP tables)
 print(cdm)
 
-# Save connection and cdm object for subsequent scripts
-saveRDS(list(con = con, cdm = cdm), file = "output/connection.rds")
+# Save only metadata, not the live connection
+saveRDS(
+  list(
+    db_path = db_path,
+    cdm_name = "GiBleed",
+    cdm_version = "5.3"
+  ),
+  file = "output/connection_meta.rds"
+)
