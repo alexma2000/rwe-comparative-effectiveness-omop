@@ -1,7 +1,7 @@
 # 03_descriptives.R
 # Baseline descriptives for diclofenac vs celecoxib cohorts
 
-install.packages("tableone")
+install.packages("tableone") 
 
 library(dplyr)
 library(tableone)
