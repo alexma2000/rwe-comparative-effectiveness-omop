@@ -1,6 +1,4 @@
-
 *.Rproj
 .Rhistory
 *.RData
-output/
 .DS_Store

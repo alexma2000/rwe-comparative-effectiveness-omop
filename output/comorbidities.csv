@@ -1,0 +1,16 @@
+"concept_name","vocabulary_id","n_patients","n_events"
+"Osteoarthritis","SNOMED",479,479
+"Viral sinusitis","SNOMED",478,2998
+"Acute viral pharyngitis","SNOMED",465,1741
+"Acute bronchitis","SNOMED",454,1439
+"Otitis media","SNOMED",350,613
+"Streptococcal sore throat","SNOMED",305,460
+"Peptic ulcer","SNOMED",266,266
+"Sprain of ankle","SNOMED",238,329
+"Sinusitis","SNOMED",162,191
+"Chronic sinusitis","SNOMED",142,142
+"Diverticular disease","SNOMED",139,139
+"Concussion with no loss of consciousness","SNOMED",135,159
+"Esophagitis","SNOMED",134,134
+"Ulcerative colitis","SNOMED",130,130
+"Acute bacterial sinusitis","SNOMED",129,152

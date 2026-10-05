@@ -1,0 +1,4 @@
+"drug_group","n_patients","n_events","total_followup_years","incidence_rate_per_1000py","incidence_proportion_pct"
+"NSAID",2694,479,4806.39561943875,99.66,17.78
+"Antiplatelet",1976,332,3944.09308692677,84.18,16.8
+"Anticoagulant",166,5,332.016427104723,15.06,3.01

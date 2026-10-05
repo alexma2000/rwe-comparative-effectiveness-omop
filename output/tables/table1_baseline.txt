@@ -1,0 +1,5 @@
+                          Stratified by treatment
+                           diclofenac    celecoxib     SMD   
+  n                          850          1844               
+  age_at_index (mean (SD)) 68.45 (16.39) 67.70 (16.06)  0.046
+  gender = Female (%)        443 (52.1)    930 (50.4)   0.034
